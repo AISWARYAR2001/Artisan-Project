@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InArt</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="#" class="logo"> <i class="fa fa-american-sign-language-interpreting"></i> InArt </a>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#features">features</a>
+        <a href="#products">products</a>
+        <a href="#categories">categories</a>
+        <a href="customerreview.html">review</a>
+        <a href="#blogs">blogs</a>
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fas fa-search" id="search-btn"></div>
+        <a href="addprod.html"><div class="fas fa-shopping-cart" id="cart-btn"></div></a>
+        <div class="fas fa-user" id="login-btn"></div>
+    </div>
+
+    <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+    
+	<form action="addprod.html" class="cart-btn">
+	      <a href="addprod.html"></a>
+	</form>
+
+    <form action="" class="login-form">
+        <h3>login now</h3>
+        <input type="email" placeholder="your email" class="box">
+        <input type="password" placeholder="your password" class="box">
+        <p>forget your password <a href="#">click here</a></p>
+        <p>don't have an account <a href="signin.html">create now</a></p>
+        <input type="submit" value="login now" class="btn">
+    </form>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content"></br></br></br></br></br></br></br>
+        <a href="#" class="btn">shop now</a>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- features section starts  -->
+
+<section class="features" id="features">
+
+    <h1 class="heading"> our <span>features</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="image/2e2f79650da083c9aedefc455a838eb5.jpg" alt="">
+            <h3>handcarts for indian's only</h3>
+            <p>The handicraft artisans of India, are known for their perfection of craftsmanship, excellence of design and form and an unsurpassed sense of colour.
+			The sector provides employment to a vast segment of craft 
+            <span id="dotsh">...</span><span id="moreh"  style="display: none;">
+              persons in rural and semi urban areas and generates substantial foreign exchange, while preserving its cultural heritage.The sector suffers for being unorganized, additional constraints of lack of education, low capital, poor exposure to new technologies, absence of market intelligence, and a poor institutional framework.
+               Artisans are depending on the middlemen for raw materials, finance and market for finished products because of their illiteracy, ignorance and poverty.
+              The success of handicrafts depends on how well the artisans can produce the articles in keeping with the tastes and preferences of consumers.
+            </span>
+			</p>
+            <button onclick="myFunctionhand()" id="btnhand" >Read more</button>
+        </div>
+
+        <div class="box">
+            <img src="image/feature-img-2.png" alt="">
+            <h3>free delivery</h3>
+            <p>
+			Free Delivery An agreement between a buyer and a seller of a security in which the seller makes delivery on the security even if full payment has not been made. 
+			This obviously exposes the seller to the risk that the buyer will not pay.
+			<span id="dotsf">...</span><span id="moref"  style="display: none;">
+			The free air delivery is the flow rate of compressor volume inside the outlet when it is measured or calculated inside the inlet condition.
+			You can measure the free air delivery by compressing the outside air in the air compressor pressure and releasing it back in the atmosphere 
+			
+			</span>
+			</p>
+            <button onclick="myFunctionfree()" id="btnfree" >Read more</button>
+        </div>
+
+        <div class="box">
+            <img src="image/feature-img-3.png" alt="">
+            <h3>easy payments</h3>
+			<p>
+			Easy Payments is a complete bill payment portal that facilitates fee collection arrangement for Educational institutions, Housing societies, and SME customers. Institutions can register at this site for collecting their dues online from the end users.
+			<span id="dotsp">...</span><span id="morep"  style="display: none;">
+			It's which enables entrepreneurs to offer online shopping assistance to new-to-ecommerce audiences. 
+			Shopping assistance provided by store owners establishes a sense of trust and helps lakhs of customers take their first steps into e-commerce.
+			They can register at EasyPayments portal for free, add any number of billers of their choice, and make payment with any of the payment options mentioned above. More than that, 
+			even customers of any bank can register to this site for initiating the payment of their bills. The portal can be accessed by clicking the link below.
+			Customise your cashier, offer multiple payments or provide a unified shopping experience. Everything for your customers. 
+			
+			</span>
+			</p>
+            <button onclick="myFunctionpay()" id="btnpay" >Read more</button>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- features section ends -->
+
+<!-- products section starts  -->
+
+<section class="products" id="products">
+
+    <h1 class="heading"> our <span>products</span> </h1>
+
+    <div class="swiper product-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="image/03 LEAF BUDDHA.jpg" alt="">
+                <h3>leaf buddha</h3>
+                <div class="price"> ₹2000</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="addprod.html" class="btn">add to your products</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/Brass-Clock.jpg" alt="">
+                <h3>brass clock</h3>
+                <div class="price"> ₹5000 </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="addprod.html" class="btn">add to your products</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/download.jpg" alt="">
+                <h3>multicolor box</h3>
+                <div class="price">₹3000 </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="addprod.html" class="btn">add to your products</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/lord_ganesha_with_color_stones.jpg" alt="">
+                <h3>lord ganesha</h3>
+                <div class="price"> ₹4500</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="addprod.html" class="btn">add to your products</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="swiper product-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="image/myebizstore-Black-Metal-Handicraft-Showpiece-SDL818600514-1-a3a49.jpg" alt="">
+                <h3>black metal handicraft</h3>
+                <div class="price"> ₹1090 </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="addprod.html" class="btn">add to your products</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/image_5eeb3bd5-70f3-44d3-907c-43be5aa0691c_600x.webp" alt="">
+                <h3>buddha</h3>
+                <div class="price"> ₹3000</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="addprod.html" class="btn">add to your products</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/product_1634204946.jpeg" alt="">
+                <h3>lord krishna</h3>
+                <div class="price"> ₹3600 </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="addprod.html" class="btn">add to your products</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/image_f6f2a4d0-3cbf-4e52-84f6-a82f47124d3d_600x.webp" alt="">
+                <h3>ganesha</h3>
+                <div class="price">₹4000 </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="addprod.html" class="btn">add to your products</a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</section>
+
+<!-- products section ends -->
+
+<!-- categories section starts  -->
+
+<section class="categories" id="categories">
+
+    <h1 class="heading"> product <span>categories</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="image/1616673189.jpeg" alt="">
+            <h3>marble handicarft</h3>
+            <p>upto 45% off</p>
+            <a href="marble.html" class="btn">shop now</a>
+        </div>
+
+        <div class="box">
+            <img src="image/indian-handicrafts-500x500.jpg" alt="">
+            <h3>wooden handicarft</h3>
+            <p>upto 45% off</p>
+            <a href="wooden.html" class="btn">shop now</a>
+        </div>
+
+        <div class="box">
+            <img src="image/user-image-31208791-1538125975-5badf09734fde.jpg" alt="">
+            <h3>metal handicarft</h3>
+            <p>upto 45% off</p>
+            <a href="metal.html" class="btn">shop now</a>
+        </div>
+    </div>
+	
+	<div class="box-container">
+        <div class="box">
+            <img src="image/Handmade Stenciled Gift Box - Gwen Lafleur.jpg" alt="">
+            <h3>handmade gifts</h3>
+            <p>upto 45% off</p>
+            <a href="handmade.html" class="btn">shop now</a>
+        </div>
+		
+		<div class="box">
+            <img src="image/OIP (2).jpg" alt="">
+            <h3>jewellary</h3>
+            <p>upto 45% off</p>
+            <a href="jewellary.html" class="btn">shop now</a>
+        </div>
+		
+		<div class="box">
+            <img src="image/il_1140xN.3015820878_ja9s.webp" alt="">
+            <h3>others</h3>
+            <p>upto 45% off</p>
+            <a href="others.html" class="btn">shop now</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- categories section ends -->
+
+<!-- blogs section starts  -->
+
+<section class="blogs" id="blogs">
+
+    <h1 class="heading"> our <span>blogs</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="image/download (1).jpg" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-user"></i> by user </a>
+                    <a href="#"> <i class="fas fa-calendar"></i> 1st April, 2022 </a>
+                </div>
+                <h3>Shells Handicrafts</h3>
+                <p>There are three kinds of shell from which shell handicrafts are made in India - conch shells, tortoiseshell and seashell. 
+				<span id="dots">...</span><span id="more"  style="display: none;">
+				Different kinds of goods like bangles, forks, decorative bowls, lockets, curtains, chandeliers, mirror frames, table mats, etc. 
+				are the products of shell handicrafts. 
+				In general, the places located on the seashore like Gulf of Mannar, Goa, Odisha, etc. 
+				are the places for shell handicraft and these art pieces are found in abundance here at a lower price
+				</span></p>
+                <button onclick="myFunction()" id="btn" >Read more</button>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="image/OIP (4).jpg" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-user"></i> by user </a>
+                    <a href="#"> <i class="fas fa-calendar"></i> 1st April, 2022 </a>
+                </div>
+                <h3>Pottery Handicrafts</h3>
+                <p>Pottery is considered to be the most sensual form of all arts.
+				<span id="dots2">...</span><span id="more2"  style="display: none;">
+				The tradition of handmade pottery is prevailing in India since the time of Harappan Civilisation. 
+				North India is also known for various kinds of pottery designs, ranging from colours like orange,brown and light red in Uttar Pradesh to black and dark red in Himachal Pradesh. 
+				In Rajasthan, Bikaner is famous for its painted pottery, Pokhran for its pottery with geometrical patterns and Alwar for its Kagzi pottery. 
+				The blue pottery of Jaipur is also very famous. The potter occupies a unique position in the craft traditions of India.
+				</span></p>
+                <button onclick="myFunction2()" id="btn2" >Read more</button>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="image/Asaram-Handicrafts-Bamboo-Cup-Set-SDL318371509-1-694bc.jpg" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-user"></i> by user </a>
+                    <a href="#"> <i class="fas fa-calendar"></i> 1st April, 2022 </a>
+                </div>
+                <h3>Bamboo Handicrafts</h3>
+                <p>Handicrafts that are made by using bamboo are the most eco-friendly crafts made in India. 
+				<span id="dots1">...</span><span id="more1"  style="display: none;">
+				The diverse items made from bamboo are baskets, dolls, toys, furniture, mats, wall-hangings, crossbows, jewellery boxes and many more. Bamboo handicrafts are predominantly prepared in West Bengal, Assam and Tripura.
+				On the whole; we can see that each region of India is endowed with unique handicraft that adds charm to the state and the country as a whole. The tradition of craft has evolved through generations, and there is a quest for innovation and invention that continues to give each craft a contemporary 
+				look but at the same time preserving the Indian heritage and culture.
+				</span></p>
+                <button onclick="myFunction1()" id="btn1" >Read more</button>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- blogs section ends --> 
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box"> 
+            <h3> InArt <i class="fa fa-american-sign-language-interpreting"></i> </h3>
+			 <!--<p>aiswarya</p> -->
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +123-456-2000 </a>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +111-222-3000 </a>
+            <a href="#" class="links"> <i class="fas fa-envelope"></i> inart@gmail.com </a>
+            <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> tamilnadu, india - 400104 </a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> home </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> features </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> products </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> categories </a>
+            <a href="customerreview.html" class="links"> <i class="fas fa-arrow-right"></i> review </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> blogs </a>
+        </div>
+
+        <div class="box">
+            <h3>newsletter</h3>
+            <p>subscribe for latest updates</p>
+            <input type="email" placeholder="your email" class="email">
+            <input type="submit" value="subscribe" class="btn">
+            <img src="image/payment.png" class="payment-img" alt="">
+        </div>
+
+    </div>
+
+    <div class="credit"> created by <span> ms. web designer </span> | all rights reserved </div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>

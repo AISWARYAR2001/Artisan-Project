@@ -1,0 +1,273 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InArt</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+	
+<style>
+
+* {box-sizing: border-box;}
+@media screen and (max-width: 300px) {
+  .btn {
+     width: 100%;
+  }
+}
+@media screen and (max-width: 300px) {
+  .loginbtn, .signupbtn {
+     width: 100%;
+  }
+}
+</style>
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="#" class="logo"> <i class="fa fa-american-sign-language-interpreting"></i> InArt </a>
+
+    <nav class="navbar">
+        <a href="index.html">home</a>
+        <a href="index.html">features</a>
+        <a href="index.html">products</a>
+        <a href="index.html">categories</a>
+        <a href="customerreview.html">review</a>
+        <a href="index.html">blogs</a>
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fas fa-search" id="search-btn"></div>
+        <a href="addprod.html"><div class="fas fa-shopping-cart" id="cart-btn"></div></a>
+        <div class="fas fa-user" id="login-btn"></div>
+    </div>
+
+    <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+    <form action="" class="login-form">
+        <h3>login now</h3>
+        <input type="email" placeholder="your email" class="box">
+        <input type="password" placeholder="your password" class="box">
+        <p>forget your password <a href="#">click here</a></p>
+        <p>don't have an account <a href="signin.html">create now</a></p>
+        <input type="submit" value="login now" class="btn">
+    </form>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content"></br></br></br></br></br></br></br>
+        <a href="#" class="btn">shop now</a>
+    </div>
+
+</section>
+
+<!-- categories section ends -->
+
+
+<!--login form-->
+<section class="categories" id="categories" style="font-size:15px;border: 3px solid #f1f1f1;">
+
+
+<h2 style="font-size:32px;">Login Form</h2>
+
+<form action="/action_page.php" method="post">
+  <div class="imgcontainer">
+    <img src="img_avatar2.png" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container" style="padding: 16px;font-family: 'Poppins', sans-serif;">
+    <label for="uname" style="font-size:18px;"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" style="width: 100%;padding: 12px 20px;margin: 8px 0;display: inline-block;border: 1px solid #ccc;box-sizing: border-box;" name="uname" required="" autofocus/>
+
+    <label for="psw" style="font-size:18px;"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" style="width: 100%;padding: 12px 20px;margin: 8px 0;display: inline-block;border: 1px solid #ccc;box-sizing: border-box;" name="psw" required="" autofocus/>
+        
+    <button type="submit" class="logbtn">Login</button>
+	
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1;padding: 16px;font-family: 'Poppins', sans-serif;">
+    <span class="psw">Forgot <a href="#">password?</a></span>
+	<span>Don't have an account already
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="signbtn">Sign Up</button></span>
+  </div>
+</form>
+
+<!--sigin form-->
+<div id="id01" class="modal" style="font-size:15px;">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  
+  <form class="modal-content" action="/action_page.php">
+  
+    <div class="container" style="padding: 16px;font-family: 'Poppins', sans-serif;">
+      <h1 style="font-size:32px;">Sign Up</h1><br/>
+      <p style="font-size:13px;">Please fill in this form to create an account.</p>
+	  
+      <hr>	 
+      <!--image add-->	  
+	  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	  <main class="main_full">
+	  <div class="container">
+		<div class="panel">
+			<div class="button_outer">
+				<div class="btn_upload">
+					<input type="file" id="upload_file" name="">
+					Upload Your Image
+				</div>				
+				<div class="processing_bar"></div>
+				<div class="success_box"></div>
+			</div>
+		</div>
+		<div class="error_msg"></div>
+		<div class="uploaded_file_view" id="uploaded_view">
+			<span class="file_remove">X</span>
+		</div>
+	  </div>
+      </main>
+	  
+	  <label for="username" style="font-size:18px;"><b>Username</b></label>
+      <input type="text"  name="username" placeholder="username"  style="width: 100%;padding: 15px;margin: 5px 0 22px 0;display: inline-block;border: none;background: #f1f1f1;"  autofocus/>
+      
+	  <label for="email" style="font-size:18px;"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" style="width: 100%;padding: 15px;margin: 5px 0 22px 0;display: inline-block;border: none;background: #f1f1f1;"  autofocus/>
+
+      <label for="psw" style="font-size:18px;"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" style="width: 100%;padding: 15px;margin: 5px 0 22px 0;display: inline-block;border: none;background: #f1f1f1;"  autofocus/>
+
+      <label for="psw-repeat" style="font-size:18px;"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" style="width: 100%;padding: 15px;margin: 5px 0 22px 0;display: inline-block;border: none;background: #f1f1f1;" required="" autofocus/>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+	    <button type="button" class="loginbtn"><a href="signin.html" style="color:white;">Login</a></button>
+      
+        <button type="submit" class="signupbtn">Sign Up</button>
+	  </div>
+	 </div>
+    </div>
+  </form>
+
+<!--image script-->
+<script>	
+var btnUpload = $("#upload_file"),
+		btnOuter = $(".button_outer");
+	btnUpload.on("change", function(e){
+		var ext = btnUpload.val().split('.').pop().toLowerCase();
+		if($.inArray(ext, ['gif','png','jpg','jpeg']) == -1) {
+			$(".error_msg").text("Not an Image...");
+		} else {
+			$(".error_msg").text("");
+			btnOuter.addClass("file_uploading");
+			setTimeout(function(){
+				btnOuter.addClass("file_uploaded");
+			},3000);
+			var uploadedFile = URL.createObjectURL(e.target.files[0]);
+			setTimeout(function(){
+				$("#uploaded_view").append('<img src="'+uploadedFile+'" />').addClass("show");
+			},3500);
+		}
+	});
+	$(".file_remove").on("click", function(e){
+		$("#uploaded_view").removeClass("show");
+		$("#uploaded_view").find("img").remove();
+		btnOuter.removeClass("file_uploading");
+		btnOuter.removeClass("file_uploaded");
+	});
+</script>
+  
+</div>
+
+</section>
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box"> 
+            <h3> InArt <i class="fa fa-american-sign-language-interpreting"></i> </h3>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +123-456-2000 </a>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +111-222-3000 </a>
+            <a href="#" class="links"> <i class="fas fa-envelope"></i> inart@gmail.com </a>
+            <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> tamilnadu, india - 400104 </a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="index.html" class="links"> <i class="fas fa-arrow-right"></i> home </a>
+            <a href="index.html" class="links"> <i class="fas fa-arrow-right"></i> features </a>
+            <a href="index.html" class="links"> <i class="fas fa-arrow-right"></i> products </a>
+            <a href="index.html" class="links"> <i class="fas fa-arrow-right"></i> categories </a>
+            <a href="customerreview.html" class="links"> <i class="fas fa-arrow-right"></i> review </a>
+            <a href="index.html" class="links"> <i class="fas fa-arrow-right"></i> blogs </a>
+        </div>
+
+        <div class="box">
+            <h3>newsletter</h3>
+            <p>subscribe for latest updates</p>
+            <input type="email" placeholder="your email" class="email">
+            <input type="submit" value="subscribe" class="btn">
+            <img src="image/payment.png" class="payment-img" alt="">
+        </div>
+
+    </div>
+
+    <div class="credit"> created by <span> ms. web designer </span> | all rights reserved </div>
+
+</section>
+
+<!-- footer section ends -->
+
+<script>
+
+</script>
+
+
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
